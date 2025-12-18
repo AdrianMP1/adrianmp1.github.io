@@ -1,0 +1,32 @@
+<!-- Shared HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <link rel="stylesheet" href="./assets/css/style.css">    
+    </head>
+
+    <body>
+
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <nav>
+            <a href="./">Home</a>
+            <a href="./projects">Projects</a>
+        </nav>
+
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            <p> {{ site.time | date: "%Y" }}</p>
+        </footer>
+
+    </body>
+
+</html>

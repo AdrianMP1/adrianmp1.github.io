@@ -1,0 +1,7 @@
+# Do not push rendered site
+_site/
+
+# Cache files
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
