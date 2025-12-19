@@ -5,27 +5,29 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ page.title }} | {{ site.title }}</title>
-        <link rel="stylesheet" href="./assets/css/style.css">    
+        <link rel="stylesheet" href="/assets/css/style.css">    
     </head>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.getElementById('site-header');
+            if (window.scrollY > 50){
+                header.classList.add('shrink');
+            } else {
+            header.classList.remove('shrink');
+            }
+        });
+    </script>
 
     <body>
 
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-
-        <nav>
-            <a href="./">Home</a>
-            <a href="./projects">Projects</a>
-        </nav>
+        {% include header.html %}
 
         <main>
             {{ content }}
         </main>
 
-        <footer>
-            <p> {{ site.time | date: "%Y" }}</p>
-        </footer>
+        {% include footer.html %}
 
     </body>
 

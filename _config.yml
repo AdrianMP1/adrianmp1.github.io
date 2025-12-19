@@ -3,3 +3,7 @@ title: My Website
 author: Someone
 github: https://github.com/AdrianMP1
 description: Personal Website
+
+collections:
+  projects:
+    output: true

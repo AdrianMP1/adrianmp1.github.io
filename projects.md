@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Projects
+description: Main Projects Page
+layout: default
 ---
 
-## Projects
-
-- Project A
-- Project B
+{{ page.description }}
