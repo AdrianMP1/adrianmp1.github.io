@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+/* Smaller fonts for small screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
 /* Body font & Background */
 body {
     font-family: Arial, sans-serif;
@@ -35,6 +50,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 /* Title */
@@ -92,6 +119,7 @@ footer {
 }
 
 .intro-box {
+    margin: 0 1rem;
     max-width: 800px;
     padding: 2rem;
     background: #e0f7fa;
@@ -149,10 +177,17 @@ footer {
     border-bottom-right-radius: 10px;
 }
 
+@media (max-width: 600px) {
+    .project-card:hover {
+        transform: none; /* Not hover on touch devices */
+    }
+}
+
 /* Experience table */
 .experience {
     max-width: 900px;
     margin: 4rem auto;
+    overflow-x: auto;
 }
 
 .experience table {
