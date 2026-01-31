@@ -1,0 +1,16 @@
+@use "_variables.scss";
+
+.main-content {
+  //min-height: 1000px;
+  height: auto;
+  padding: 30px 50px;
+  position: relative;
+  width: 60%;
+}
+
+.main-content p {
+  color: #25373D;
+  font-family: variables.$font-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}

@@ -4,6 +4,10 @@ author: Someone
 github: https://github.com/AdrianMP1
 description: Personal Website
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 collections:
   projects:
     output: true
